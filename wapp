@@ -1,0 +1,13 @@
+#!/usr/bin/python
+
+from weatherapp import weather_app
+#weather_app.WeatherApp()
+
+if __name__ == "__main__":
+	#print "main started"
+        #wa = weather_app.WeatherApp()
+	try:
+                print "main started"
+		weather_app.WeatherApp()
+	except Exception as ex:
+                print "Something went wrong : " + str(ex)

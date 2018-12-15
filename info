@@ -1,0 +1,27 @@
+Python 2.7.6
+
+https://pypi.org/project/weather-api/
+pip install weather-api
+
+
+Refered following resources for developement
+-----------------------------------------------------------------
+https://www.youtube.com/watch?v=vNxhi2a2SpI
+https://python-gtk-3-tutorial.readthedocs.io/en/latest/entry.html
+https://pygobject.readthedocs.io/en/latest/getting_started.html
+https://docs.python.org/3/library/sqlite3.html#module-sqlite3
+
+
+Refered following link for pakacging
+-----------------------------------------------------------------
+https://wiki.python.org/moin/Distutils/Tutorial
+
+
+# build dist
+> python setup.py sdist
+> cd dist
+> tar -xvf wapp-1.tar.gz
+> cd wapp-1
+> sudo python setup.py install
+> wapp
+
