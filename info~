@@ -1,10 +1,15 @@
-Python 2.7.6
+Weather App is developed using Python 2.7.6 and GTK
 
+
+# Following weather API is used to fetch data.
 https://pypi.org/project/weather-api/
+
+
+# Command to install package
 pip install weather-api
 
 
-Refered following resources for developement
+# Refered following resources for developement
 -----------------------------------------------------------------
 https://www.youtube.com/watch?v=vNxhi2a2SpI
 https://python-gtk-3-tutorial.readthedocs.io/en/latest/entry.html
@@ -12,12 +17,11 @@ https://pygobject.readthedocs.io/en/latest/getting_started.html
 https://docs.python.org/3/library/sqlite3.html#module-sqlite3
 
 
-Refered following link for pakacging
+# Refered following link for pakacging
 -----------------------------------------------------------------
 https://wiki.python.org/moin/Distutils/Tutorial
 
-
-# build dist
+# steps for package building and distribution
 > python setup.py sdist
 > cd dist
 > tar -xvf wapp-1.tar.gz
