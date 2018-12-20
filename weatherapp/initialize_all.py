@@ -2,7 +2,11 @@
 import os.path
 import site
 import sqlite3
-import gobject
+#import gobject
+from gi.repository import GObject as gobject
+#import threading, time #, GObject
+#import threading, time 
+#from gi.repository import GObject
 import weather_helper
 
 class InitializeAll:
@@ -48,6 +52,9 @@ class InitializeAll:
 		gobject.threads_init()
                 self.sync_thread = gobject.timeout_add(10000, self.run)
 
+                #GObject.threads_init()
+                #thread = threading.Thread(target=self.run)
+
 
 	def create_db(self):
 
@@ -72,6 +79,7 @@ class InitializeAll:
 
 	def run(self):
                 print "thread running"
+                #time.sleep(5)
                 searchentry_location = self.weather_app.get_widget("searchentry_location")
                 location_str = searchentry_location.get_text().strip()
 
