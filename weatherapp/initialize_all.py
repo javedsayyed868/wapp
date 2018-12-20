@@ -4,7 +4,6 @@ import site
 import sqlite3
 #import gobject
 from gi.repository import GObject as gobject
-#import threading, time #, GObject
 #import threading, time 
 #from gi.repository import GObject
 import weather_helper
